@@ -1107,8 +1107,10 @@ wxTerm::MarkSelection()
     m_curDC = 0;
     delete dc;
   }
+  fprintf(stderr, "%s:%d : selected \n", __FUNCTION__, __LINE__);
 
   m_marking = FALSE;
+  Refresh();
 }
 
 //////////////////////////////////////////////////////////////////////////////

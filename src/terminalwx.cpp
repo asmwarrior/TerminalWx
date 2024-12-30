@@ -32,7 +32,7 @@ TerminalWx::TerminalWx(wxWindow* parent, wxWindowID id,
         By default it does nothing.
 */
 void TerminalWx::OnUserInput(wxString input) {
-    wxLogDebug("GotInput! %s",input);
+    fprintf(stderr, "GotInput! %s\n",input.ToUTF8().data());
     //By default do nothing.
 }
 
@@ -70,7 +70,6 @@ TerminalWx::~TerminalWx()
 {
     //dtor
 }
-
 
 wxBEGIN_EVENT_TABLE(TerminalWx, wxTerm)
 
