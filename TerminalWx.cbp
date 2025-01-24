@@ -55,16 +55,13 @@
 		<Unit filename="src/terminalwx.cpp" />
 		<Unit filename="src/terminalwx.h" />
 		<Extensions>
-			<code_completion />
-			<envvars />
+			<lib_finder disable_auto="1" />
 			<wxsmith version="1">
 				<gui name="wxWidgets" src="TerminalWxApp.cpp" main="TerminalWxFrame" init_handlers="necessary" language="CPP" />
 				<resources>
-					<wxFrame wxs="wxsmith/TerminalWxframe.wxs" src="TerminalWxMain.cpp" hdr="TerminalWxMain.h" name="TerminalWxFrame" language="CPP" />
+					<wxFrame wxs="wxsmith/TerminalWxframe.wxs" src="TerminalWxMain.cpp" hdr="TerminalWxMain.h" fwddecl="0" i18n="1" name="TerminalWxFrame" language="CPP" />
 				</resources>
 			</wxsmith>
-			<lib_finder disable_auto="1" />
-			<debugger />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
