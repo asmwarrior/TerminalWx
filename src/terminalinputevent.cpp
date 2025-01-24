@@ -10,7 +10,9 @@ License: wxWindows License Version 3.1 (See the file license3.txt)
 #include "terminalinputevent.h"
 
 
-DEFINE_EVENT_TYPE(chEVT_TERMINAL_INPUT)
+// DEFINE_EVENT_TYPE(chEVT_TERMINAL_INPUT)
+
+wxDEFINE_EVENT(chEVT_TERMINAL_INPUT, TerminalInputEvent);
 
 TerminalInputEvent::TerminalInputEvent(wxString str)
 	: wxEvent(0, chEVT_TERMINAL_INPUT),m_string(str)

@@ -15,7 +15,9 @@ License: wxWindows License Version 3.1 (See the file license3.txt)
 // -------------------------------------------------------------------
 // ProcessEvent
 // -------------------------------------------------------------------
-DECLARE_EVENT_TYPE(chEVT_TERMINAL_INPUT, wxID_ANY)
+// DECLARE_EVENT_TYPE(chEVT_TERMINAL_INPUT, wxID_ANY)
+
+
 
 
 class TerminalInputEvent : public wxEvent
@@ -34,6 +36,8 @@ class TerminalInputEvent : public wxEvent
 		wxString m_string;
 
 };
+
+wxDECLARE_EVENT(chEVT_TERMINAL_INPUT, TerminalInputEvent);
 
 typedef void (wxEvtHandler::*TerminalInputEventFunction)(TerminalInputEvent&);
 
