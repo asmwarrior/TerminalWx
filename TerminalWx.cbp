@@ -31,11 +31,11 @@
 			</Target>
 		</Build>
 		<Compiler>
-			<Add option="`wx-config --cflags`" />
 			<Add option="-Wall" />
+			<Add option="`$(#wx_config) --cflags`" />
 		</Compiler>
 		<Linker>
-			<Add option="`wx-config --libs`" />
+			<Add option="`$(#wx_config) --libs`" />
 		</Linker>
 		<Unit filename="TestApp.cpp" />
 		<Unit filename="TestApp.h" />
