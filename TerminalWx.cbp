@@ -36,7 +36,10 @@
 		</Compiler>
 		<Linker>
 			<Add option="`$(#wx_config) --libs`" />
+			<Add option="-lwinpty" />
 		</Linker>
+		<Unit filename="TerminalWxWin.cpp" />
+		<Unit filename="TerminalWxWin.h" />
 		<Unit filename="TestApp.cpp" />
 		<Unit filename="TestApp.h" />
 		<Unit filename="TestMain.cpp" />
@@ -54,6 +57,7 @@
 		<Unit filename="src/terminalinputevent.h" />
 		<Unit filename="src/terminalwx.cpp" />
 		<Unit filename="src/terminalwx.h" />
+		<Unit filename="wxsmith/Testframe.wxs" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 			<wxsmith version="1">

@@ -67,7 +67,7 @@ TerminalWxFrame::TerminalWxFrame(wxWindow* parent,wxWindowID id)
     wxMenu* Menu2;
 
     Create(parent, id, _("Test TerminalWx App"), wxDefaultPosition, wxDefaultSize, wxDEFAULT_FRAME_STYLE, _T("id"));
-    Term1 = new TerminalWx(this,ID_TERM,wxPoint(72,56),80,24,_T("ID_TERM"));
+    Term1 = new TerminalWxWin(this,ID_TERM);
     MenuBar1 = new wxMenuBar();
     Menu1 = new wxMenu();
     MenuItem1 = new wxMenuItem(Menu1, idMenuQuit, _("Quit\tAlt-F4"), _("Quit the application"), wxITEM_NORMAL);

@@ -19,6 +19,7 @@ License: wxWindows License Version 3.1 (See the file license3.txt)
 #include <wx/window.h>
 
 #include "src/terminalwx.h"
+#include "TerminalWxWin.h"
 
 class TerminalWxFrame: public wxFrame
 {
@@ -45,7 +46,7 @@ class TerminalWxFrame: public wxFrame
 
         //(*Declarations(TerminalWxFrame)
         wxStatusBar* StatusBar1;
-        TerminalWx* Term1;
+        TerminalWxWin* Term1;
         //*)
 
         DECLARE_EVENT_TABLE()
